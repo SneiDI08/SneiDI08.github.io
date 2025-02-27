@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción IA - Trabajos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8ff;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Estilo del encabezado */
+        header {
+            background: #ffdb58;
+            color: #00509e;
+            padding: 15px 0;
+            font-weight: bold;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #00509e;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        /* Sección principal con fondo */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: #a1cdf3;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        /* Botones */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #6ea8fe;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #00509e;
+        }
+
+        /* Contenedor de PDFs */
+        .pdf-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        embed {
+            width: 300px; 
+            height: 200px; 
+            max-width: 100%; 
+            max-height: 250px;
+            margin: 10px 0;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            object-fit: contain;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Introducción IA</p>
+            <nav>
+                <a href="#">Volver a la Página Principal</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <h1>Trabajos Primer Semestre</h1>
+        <h2>Dady Sneider Loaiza Loaiza</h2>
+    </section>
+
+    <section class="container">
+        <h2>Primer Taller</h2>
+        <hr>
+        <h3>Taller del Docente</h3>
+        <p>Realizar el teorema de Euler a través del problema del caballo de ajedrez</p>
+        <hr>
+        <h3>Entrega del Estudiante</h3>
+        <button onclick="window.location.href='docs/Entrega_1taller.pdf'">Descargar PDF</button>
+    </section>
+
+    <section class="container">
+        <h2>Segundo Taller</h2>
+        <hr>
+        <h3>Taller del Docente</h3>
+        <div class="pdf-container">
+            <embed src="docs/Taller_IA_Historia.pdf" type="application/pdf">
+            <button onclick="window.location.href='docs/Taller_IA_Historia.pdf'">Descargar</button>
+        </div>
+        <hr>
+        <h3>Entrega del Estudiante</h3>
+        <div class="pdf-container">
+            <embed src="docs/Trabajo_HISTORIA_IA.pdf" type="application/pdf">
+            <button onclick="window.location.href='docs/Trabajo_HISTORIA_IA.pdf'">Descargar</button>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Tercer Taller</h2>
+        <hr>
+        <h3>Taller del Docente</h3>
+        <div class="pdf-container">
+            <embed src="docs/Taller_Tipologias_IA.pdf" type="application/pdf">
+            <button onclick="window.location.href='docs/Taller_Tipologias_IA.pdf'">Descargar</button>
+        </div>
+        <hr>
+        <h3>Entrega del Estudiante</h3>
+        <div class="pdf-container">
+            <embed src="docs/Tipologias_IA.pdf" type="application/pdf">
+            <button onclick="window.location.href='docs/Tipologias_IA.pdf'">Descargar</button>
+        </div>
+        <div class="pdf-container">
+            <embed src="docs/Mapa conceptual.pdf" type="application/pdf">
+            <button onclick="window.location.href='docs/Mapa conceptual.pdf'">Descargar</button>
+        </div>
+    </section>
+</body>
+</html>
