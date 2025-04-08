@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,6 @@
             color: #333;
         }
 
-        /* Estilo del encabezado */
         header {
             background: #ffdb58;
             color: #00509e;
@@ -35,7 +34,6 @@
             font-size: 18px;
         }
 
-        /* Sección principal con fondo */
         .container {
             width: 80%;
             margin: auto;
@@ -47,7 +45,6 @@
             margin-top: 20px;
         }
 
-        /* Botones */
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -64,7 +61,6 @@
             background: #00509e;
         }
 
-        /* Contenedor de PDFs */
         .pdf-container {
             display: flex;
             flex-direction: column;
@@ -83,9 +79,32 @@
             object-fit: contain;
             background: white;
         }
+
+        a {
+            color: #00376b;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            embed {
+                width: 100%;
+                height: auto;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
+
     <header>
         <div class="container">
             <p class="logo">Introducción IA</p>
@@ -100,6 +119,7 @@
         <h2>Dady Sneider Loaiza Loaiza</h2>
     </section>
 
+    <!-- Taller 1 -->
     <section class="container">
         <h2>Primer Taller</h2>
         <hr>
@@ -113,6 +133,7 @@
         </div>
     </section>
 
+    <!-- Taller 2 -->
     <section class="container">
         <h2>Segundo Taller</h2>
         <hr>
@@ -129,6 +150,7 @@
         </div>
     </section>
 
+    <!-- Taller 3 -->
     <section class="container">
         <h2>Tercer Taller</h2>
         <hr>
@@ -148,5 +170,93 @@
             <button onclick="window.location.href='docs/Mapa conceptual.pdf'">Descargar</button>
         </div>
     </section>
+
+    <!-- Taller 4 -->
+    <section class="container">
+        <h2>Cuarto Taller</h2>
+        <hr>
+        <h3>Taller del Docente</h3>
+        <div class="pdf-container">
+            <embed src="docs/Juegos de IA(1).pdf" type="application/pdf">
+            <button onclick="window.location.href='docs/Juegos de IA(1).pdf'">Descargar</button>
+        </div>
+        <hr>
+        <h3>Entrega del Estudiante</h3>
+        <div class="pdf-container">
+            <embed src="docs/Presentacion 1.pdf" type="application/pdf">
+            <button onclick="window.location.href='docs/Presentacion 1.pdf'">Descargar</button>
+        </div>
+    </section>
+
+    <!-- Primer Parcial -->
+    <section class="container">
+        <h2>Primer Parcial</h2>
+        <hr>
+        <h3>Taller del Docente</h3>
+        <p>Eres un repartidor de la Sergio Arboleda y debes hacer un encargo en 8 ciudades diferentes, encuentra la ruta más óptima usando algoritmos.</p>
+        <hr>
+        <h3>Entrega del Estudiante</h3>
+        <div class="pdf-container">
+            <embed src="docs/PARCIAL IA Dady Sneider Loaiza Loaiza Grupo 01.pdf" type="application/pdf">
+            <button onclick="window.location.href='docs/PARCIAL IA Dady Sneider Loaiza Loaiza Grupo 01.pdf'">Descargar PDF</button>
+        </div>
+    </section>
+
+    <!-- Taller 6 -->
+    <section class="container">
+        <h2>Sexto Taller</h2>
+        <hr>
+        <h3>Taller del Docente</h3>
+        <div class="pdf-container">
+            <embed src="docs/AgentesIA.pdf" type="application/pdf">
+            <button onclick="window.location.href='docs/AgentesIA.pdf'">Descargar</button>
+        </div>
+        <hr>
+        <h3>Entrega del Estudiante</h3>
+        <div class="pdf-container">
+            <embed src="docs/AIA.pdf" type="application/pdf">
+            <button onclick="window.location.href='docs/AIA.pdf'">Descargar</button>
+        </div>
+        <p>Puedes acceder al modelo en Teachable Machine: 
+            <a href="https://teachablemachine.withgoogle.com/models/XT5jWQktb/" target="_blank">
+                Ver modelo
+            </a>
+        </p>
+    </section>
+
+    <!-- Taller 7 -->
+    <section class="container">
+        <h2>Septimo Taller</h2>
+        <hr>
+        <h3>Taller del Docente</h3>
+        <div class="pdf-container">
+            <embed src="docs/Proyecto de Machine Learning.pdf" type="application/pdf">
+            <button onclick="window.location.href='docs/Proyecto de Machine Learning.pdf'">Descargar</button>
+        </div>
+        <hr>
+        <h3>Entrega del Estudiante</h3>
+        <div class="pdf-container">
+            <embed src="docs/ML.pdf" type="application/pdf">
+            <button onclick="window.location.href='docs/ML.pdf'">Descargar</button>
+        </div>
+    </section>
+
+    <!-- Taller 8 -->
+    <section class="container">
+        <h2>Octavo Taller</h2>
+        <hr>
+        <h3>Taller del Docente</h3>
+        <div class="pdf-container">
+            <embed src="docs/ml articulos (2).pdf" type="application/pdf">
+            <button onclick="window.location.href='docs/ml articulos (2).pdf'">Descargar</button>
+        </div>
+        <hr>
+        <h3>Entrega del Estudiante</h3>
+        <div class="pdf-container">
+            <p>Archivo de presentación disponible para descarga:</p>
+            <button onclick="window.location.href='docs/QUE-ES-EL-APRENDIZAJE-AUTOMATICO.pptx'">Descargar Presentación</button>
+        </div>
+    </section>
+
 </body>
 </html>
